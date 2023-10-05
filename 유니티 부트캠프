@@ -1,4 +1,30 @@
-ㄴㅇㄹㅇ
-ㅇㄹㅇㄹ
-ㅇㄹㅇㄹㅇ
-ㄹㅇㄹ
+using System;
+
+class programs
+{
+
+    static void Main()
+    {
+        Console.WriteLine("직업을 입력하세요");
+        string input = Console.ReadLine();
+
+        if (input == "도적" || input == "서머너")
+        {
+             Console.WriteLine("레벨을 입력하세요.");
+            int level = Convert.Toint32(Console.ReadLine());
+
+              if (level >= 50)
+              {
+                  Console.WriteLine("입장 가능한 레벨 입니다.);
+              else
+              {
+                  Console.WriteLine("입장 불가 레벨 입니다.);
+              }
+        }
+        else
+        {
+              Console.WriteLine("입장 불가능한 작업입니다.");
+        }
+    }
+}
+
